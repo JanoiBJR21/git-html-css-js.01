@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <style>
+        .important{
+            color: red !important;
+        }
+        h1{
+            color: blueviolet;
+        }
+        #myHead{
+            color: aquamarine;
+        }
+        .first h1{
+            color: darkgoldenrod
+        }
+        .first > h1{
+            color: darkmagenta;
+        }
+        .rgb h1{
+            color: rgb(123, 123, 123);
+        }
+        .hex h1{
+            color: #d58f54;
+        }
+        .rgba h1{
+            color: rgba(123,123,123,0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blue;">CSS.1</h1>
+    <h1 class="important" style="color: blue;">CSS.2</h1>
+    <h1>CSS.3</h1>
+    <h1 id="myHead">CSS.4</h1>
+    <div class="first">
+        <div>
+            <h1>CSS.5</h1>
+        </div>
+    </div>
+    <div class="frist">
+        <h1>CSS.6</h1>
+    </div>
+    <div class="rgb">
+        <h1>CSS.7</h1>
+    </div>
+    <div class="hex">
+        <h1>CSS.8</h1>
+    </div>
+    <div class="rgba">
+        <h1>CSS.9</h1>
+    </div>
+
+    <div class="background width200"></div>
+    <div class="background_image width200"></div>
+    <div class="border width200"></div>
+    <div class="margin width200"></div>
+    <div class="padding width200">
+        This is a text.This is a text.This is a text.This is a text.This is a text.This is a text.This is a text.This is a text.
+    </div>
+    <div class="width_height"></div>
+
+    <div class="mixed_width">
+        This is a mixed_width
+    </div>
+
+    <div class="outline width200"></div>
+    <div class="text">
+        <p>This is a Paragraph.</p>
+        <p class="left">This is a Paragraph.</p>
+        <p class="right">This is a Paragraph.</p>
+        <p class="indent">This is a Paragraph.This is a Paragraph.This is a Paragraph.This is a Paragraph.This is a Paragraph.</p>
+    </div>
+    <div class="font">
+        <p>This is a Paragraph.</p>
+        <p>โดยที่การไม่นำพาและการหมิ่นในคุณค่าของสิทธิมนุษยชน</p>
+        <p>This is a Paragraph.</p>
+        <p>This is a Paragraph.</p>
+        <p>This is a Paragraph.</p>
+        <p>This is a Paragraph.</p>
+        <p>This is a Paragraph.</p>
+    </div>
+    <div class="icon">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-truck-fast"></i>
+        <i class="fa-solid fa-trophy"></i>
+    </div>
+    <div class="link">
+        <a href="#">test 1</a>
+        <a href="#">test 2</a>
+        <a href="#">test 3</a>
+        <a href="#">test 4</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_CSS_JS</title>
+</head>
+
+<body>
+    <section class="section" id="header">
+        <h1>"Header"</h1>
+        <p>
+        <h1>This is a Header 1</h1>
+        <h2>This is a Header 2</h2>
+        <h3>This is a Header 3</h3>
+        <h4>This is a Header 4</h4>
+        <h5>This is a Header 5</h5>
+        <h6>This is a Header 6</h6>
+        </p>
+    </section>
+
+    <section class="section" id="paragrahp">
+        <h1>"Paragrahp"</h1>
+        <p>
+            This is a paragrahp. This is a paragrahp. This is a paragrahp. This is a paragrahp. This is a paragrahp.
+        </p>
+    </section>
+
+    <section class="section" id="formatting">
+        <h1>"Formatting"</h1>
+        <p>This is a <strong>Bold</strong></p>
+        <p>This is a <em>Emphasize</em></p>
+        <p><mark>This is a Mark.</mark></p>
+        <p>This is a <sub>Subscript.</sub> </p>
+        <p>This is a <del>Strikeout</del></p>
+    </section>
+
+    <section class="section" id="qoutations">
+        <h1>"Qoutations"</h1>
+        <p><q>This is a Qoute</q></p>
+        <blockquote>
+            This is a blockqoute.This is a blockqoute.This is a blockqoute.This is a blockqoute.
+        </blockquote>
+        <bdo dir="rtl">This is a bdo.</bdo>
+        <p>This is a <abbr title="World Health Organization">WHO<abbr></p>
+    </section>
+
+    <section class="section" id="comment">
+        <h1>"Comment"</h1>
+        <!-- <p>This is a comment.</p> -->
+        <!--<p>This is a comment.</p>
+        <p>This is a comment.</p>
+        <p>This is a comment.</p>-->
+        <p>This is a Hello<!--comment.--></p>
+    </section>
+
+    <section class="section" id="link">
+        <h1>"Link"</h1>
+        <a href="https://google.com">GOOGLE</a><br>
+        <a href="https://google.com" target="_blank">GOOGLE Target blank</a>
+        <a href="https://google.com"><p>This is a paragraph</p>
+        </a>
+    </section>
+
+    <section class="section" id="media">
+        <h1>"Media"</h1>
+        <img src="image/firefox.jpg" alt="firefox" width="400">
+        <img src="image/firefox2.jpg" alt="firefox" width="400"><!--ชื่อไฟล์ไม่มีอยู่จริง-->
+        <video src="https://futureskill.s3-ap-southeast-1.amazonaws.com/super+content.mp4" width="400"></video><!--autoplay-->
+        <audio src="audio/audio.mp3"></audio><!--autoplay-->
+    </section>
+
+    <section class="section" id="table">
+        <h1>"Table"</h1>
+        <table>
+            <caption>My table</caption>
+            <tr><!--row-->
+                <th colspan="2" rowspan="2">title</th><!--column-->
+                <th>dete</th>
+            </tr>
+            <tr>
+                <td>Janoi</td><!--body-->
+                <td>01/06/1997</td>
+            </tr>
+            <tr>
+                <td>BJR</td>
+                <td>01/06/2567</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="section" id="list">
+        <h1>"List"</h1>
+        <ol><!--ตัวเลข-->
+            <li>My name is A.</li>
+            <li>My name is B.</li>
+            <li>My name is C.</li>
+        </ol>
+        <ol type="A"><!--ตัวอักศร-->
+            <li>My name is A.</li>
+            <li>My name is B.</li>
+            <li>My name is C.</li>
+        </ol>
+        <ol type="I"><!--ตัวเลขโลมัน-->
+            <li>My name is A.</li>
+            <li>My name is B.</li>
+            <li>My name is C.</li>
+        </ol>
+        <ul><!--จุดกลม-->
+            <li>My name is A.</li>
+            <li>My name is B.</li>
+            <li>My name is C.</li>
+        </ul>
+        <ul style="list-style-type: square;"><!--สี่เหลี่ยม-->
+            <li>My name is A.</li>
+            <li>My name is B.</li>
+            <li>My name is C.</li>
+        </ul>
+        <dl>
+            <dt>A</dt><!--หัวข้อ-->
+            <dd>My name is A.</dd>
+            <dt>ฺB</dt>
+            <dd>My name is B.</dd>
+        </dl>
+    </section>
+
+    <section class="section" id="iframe">
+        <h1>"Iframe"</h1>
+        <iframe width="400" height="270" src="https://www.youtube.com/embed/s6SZOyD41YY?si=yC56uqj2G3T0w2vE"></iframe>
+        <iframe width="400" height="270" src="https://www.youtube.com/embed/D_SQmedAKjA?si=kB8BE27qNbKqkBd4"></iframe>
+    </section>
+
+    <section class="section" id="script">
+        <h1>"Script"</h1>
+        <p id="test_script">THIS IS A</p>
+        <script>
+            function runAlert(){
+                alert("This is a SCRIPT.")
+            }
+            document.getElementById("test_script").innerHTML = "MY NAME IS APICHAT"
+            //runAlert()
+        </script>
+        <!--<script type="Text/javascript" src="" async defer></script>--> <!--ตัวอย่างการใช้เขียน-->
+    </section>
+
+    <section class="section" id="code">
+        <h1>"CODE หรือ ตัวแปล"</h1>
+        <pre>
+            <code>
+                function test (a,b){
+                    return a+b
+                }
+            </code>
+        </pre>
+        <p><var>x</var> = 1+2</p>
+    </section>
+
+    <section class="section" id="form">
+        <h1>"FORM"</h1>
+        <form>
+            Text: <input type="text"><br><br>
+            Text2: <input type="text2" readonly value="README"><br><br>
+            Tetextarea: <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
+            Number: <input type="number"><br><br>
+            Password: <input name="password" type="password"><br><br>
+            Submit: <input type="submit"><br><br>
+            Select: <select name="">
+                <option value="A">ant</option>
+                <option value="B" selected>bird</option>
+                <option value="C">cat</option>
+            </select><br><br>
+            Blue: <input type="radio" value="blue">
+            Red: <input type="radio" value="red">
+            Green: <input type="checkbox" value="Green"><br><br>
+            Disabled: <input type="text" disabled><br><br>
+            Button: <button onclick="" type="button">Crick Me</button><br><br>
+            Button2: <button onsubmit="" type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
