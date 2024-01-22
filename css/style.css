@@ -109,9 +109,9 @@ text-decoration-color: red;
     font-style: oblique;
 }
 .icon i:first-child{
-    margin: 50px;
+    margin: 20px;
     color: red;
-    font-size: 50px;
+    font-size: 30px;
 }
 .link a:link{
     color: blue;
@@ -126,3 +126,29 @@ text-decoration-color: red;
     color: orange;
     background-color: black;
 }
+.list ul{
+    list-style-type: disc;
+    background: rebeccapurple;
+}
+.list ul li{
+    list-style-position: outside;
+    background-color: #df3434;
+    margin: 5px;
+    margin-left: 20px;
+}
+.display p:first-child{
+    display: none;
+}
+.display p:nth-child(2){
+    display: block;
+}
+.display p:nth-child(3){
+    display: inline;
+}
+.display p:nth-child(4){
+    display: inline-block;
+}
+.display p:nth-child(7){
+    display: inline;
+}
+
