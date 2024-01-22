@@ -151,4 +151,87 @@ text-decoration-color: red;
 .display p:nth-child(7){
     display: inline;
 }
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 200px;
+}
+/* .flex .flex_item{
+    flex: 1;
+    height: 30px;
+    margin: 5px;
+    background-color: yellow;
+} */
+.flex .flex_item:first-child{
+    /* flex: 3; */
+    height: 30px;
+    width: 100px;
+    margin: 5px;
+    background-color: yellow;
+}
+.flex .flex_item:nth-child(2){
+    /* flex: 3; */
+    height: 30px;
+    width: 100px;
+    margin: 5px;
+    background-color: yellow;
+}
+.position {
+    position: relative;
+    height: 1000px;
+}
+.position div:first-child{
+    position: static;
+}
+.position div:nth-child(2){
+    position: absolute;
+    top: 200px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.position div:nth-child(3){
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.position div:nth-child(4){
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.position div:nth-child(5){
+    position: sticky;
+    top: 10px;
+}
+.overflow{
+    overflow: auto;
+    height: 300px;
+}
+.overflow .box{
+    height: 1000px;
+    width: 150%;
+    background-color: red;
+}
+.float{
 
+}
+.float .normal{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+.float .left{
+    float: left;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}
+.float .right{
+    float: right;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}
