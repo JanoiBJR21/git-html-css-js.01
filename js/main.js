@@ -65,70 +65,169 @@ var obj = {
 /////////////////Function/////////////////
 //////////////////////////////////////////
 function plus(x, y) {
-    return x + y;
-  }
-  var r = plus(10, 20);
-  console.log("result", r);
-  function log(data) {
-    console.log(data);
-    return;
-  }
-  function plus2(x, y) {
-    return plus(x, y);
-  }
-  function area(w, h, t) {
-    if (t == "square") return w * h;
-    else return Math.PI * x * x;
-  }
-  log(plus2(3, 4));
-  log(area(10, 10, "square"));
-  log(area(10));
+  return x + y;
+}
+var r = plus(10, 20);
+console.log("result", r);
+function log(data) {
+  console.log(data);
+  return;
+}
+function plus2(x, y) {
+  return plus(x, y);
+}
+function area(w, h, t) {
+  if (t == "square") return w * h;
+  else return Math.PI * x * x;
+}
+log(plus2(3, 4));
+log(area(10, 10, "square"));
+log(area(10));
 
-  ////////////////////////////////////////////////
+////////////////////////////////////////////////
 /////////////////////Array//////////////////////
 ////////////////////////////////////////////////
-
 var myArr = ["string", 123, { text: "test" }, ["test"], true];
 var myArr2 = new Array("string", 123, { text: "test" });
 console.log(myArr2);
 
-// console.log(myArr[0]);
-// for (let i = 0; i < myArr.length; i++) {
-//   console.log("index: " + i, myArr[i]);
+console.log(myArr[0]);
+for (let i = 0; i < myArr.length; i++) {
+  console.log("index: " + i, myArr[i]);
+}
+myArr[5] = "test test";
+// log(myArr);
+
+myArr.push("test index 5");
+// log(myArr);
+
+myArr.pop();
+// log(myArr);
+myArr.unshift("test add 0 index");
+
+myArr.shift();
+// log(myArr);
+
+// myArr.map((myVal, index) => {
+//   console.log("this is index " + index, " = ", myVal);
+// });
+
+var myArr3 = [
+  { name: "Test1" },
+  { name: "Test2" },
+  { name: "Test3" },
+  { name: "Test4" },
+  { name: "Test5" }
+];
+
+var myNewArr3 = myArr3.map(function (val, ind) {
+  return val.name;
+});
+console.log(myNewArr3);
+
+myArr3.forEach((val, ind) => {
+  console.log(ind, " =", val);
+});
+
+myArr3.splice(2, 3);
+console.log(myArr3);
+
+////////////////////////////////////////////////
+/////////////////////Object/////////////////////
+////////////////////////////////////////////////
+var myObj = {};
+var myObj2 = new Object();
+console.log("Type Of myObj", typeof myObj);
+console.log("Type Of myObj2", typeof myObj2);
+
+myObj.name = "GOOGLE";
+myObj.lastname = "GOOGLE.com";
+myObj.lastname = "30";
+myObj.name = "Janoi";
+console.log("myObj.name:", myObj.name);
+console.log("myObj[name]:", myObj["name"]);
+
+myObj.nameLength = function () {
+  return this.name.length;
+};
+myObj.name = "Jenny";
+myObj["name"] = "JanoiBJR";
+myObj["age"] = 23;
+
+console.log(myObj.nameLength());
+
+console.log("Before", myObj);
+delete myObj.lastname;
+delete myObj["age"];
+console.log("Affer", myObj);
+
+////////////////////////////////////////////////
+/////////////////////if else for////////////////
+////////////////////////////////////////////////
+var test1 = [
+  { x: 78, y: 14 },
+  { x: 23, y: 9 },
+  { x: 87, y: 62 },
+  { x: "57", y: 27 }
+];
+
+test1.forEach(val => {
+  if (val.x > 50) console.log("X eqaul to ", val.x);
+  else if (val.x == 57) console.log("X eqaul to ", val.x);
+  else console.log("Y eqaul to ", val.y);
+});
+
+if (test1[0].y > 0) console.log("test1[0].y", test1[0].y);
+
+////////////////////////////////////////////////
+/////////////////////switch/////////////////////
+////////////////////////////////////////////////
+var mySwitch = "two";
+switch (mySwitch) {
+  case "one":
+    console.log("mySwitch eqaul to 1");
+    break;
+  case "two":
+    console.log("mySwitch eqaul to 2");
+    break;
+  case "three":
+    console.log("mySwitch eqaul to 3");
+    break;
+}
+
+////////////////////////////////////////////////
+/////////////////////Loop///////////////////////
+////////////////////////////////////////////////
+// let x = 1
+for (let x = 0; x <= 5; x++) {
+  console.log("X = ", x);
+}
+
+// let aaa = "test";
+// while (aaa =< "test") {
+//   console.log("A equal to ", aaa);
+//   // aaa += 5;
 // }
-// myArr[5] = "test test";
-// // log(myArr);
 
-// myArr.push("test index 5");
-// // log(myArr);
+////////////////////////////////////////////////
+/////////////////////DOM///////////////////////
+////////////////////////////////////////////////
+//DOCUMENT OBJECT MODEL
+var myDiv = document.getElementById("myDiv");
+myDiv.style.width = "200px";
+myDiv.style.height = "200px";
+myDiv.style.backgroundColor = "red";
+myDiv.innerHTML = "<h1>Hello World!</h1>";
 
-// myArr.pop();
+var elements = document.getElementsByClassName("myClassName");
+// elements[0].innerHTML = "my class name";
 
-// myArr.unshift("test add 0 index");
+for (let e = 0; e < elements.length; e++) {
+  elements[e].innerHTML = "my class name " + e;
+}
 
-// myArr.shift();
-// // log(myArr);
-
-// // myArr.map((myVal, index) => {
-// //   console.log("this is index " + index, " = ", myVal);
-// // });
-
-// var myArr3 = [
-//   { name: "Test1" },
-//   { name: "Test2" },
-//   { name: "Test3" },
-//   { name: "Test4" },
-//   { name: "Test5" }
-// ];
-
-// var myNewArr3 = myArr3.map(function(val, ind) {
-//   return val.name;
-// });
-// console.log(myNewArr3);
-
-// myArr3.forEach((val, ind) => {
-//   console.log(ind, " =", val);
-// });
-
-// myArr3.splice(2, 3);
-// console.log(myArr3);
+var myBody = document.getElementsByTagName("body");
+var myh1 = document.createElement("h1");
+var textNode = document.createTextNode("THIS IS A BODY");
+myh1.appendChild(textNode);
+myBody[0].appendChild(myh1);
